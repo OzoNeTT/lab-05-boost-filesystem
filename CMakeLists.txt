@@ -33,7 +33,7 @@ find_package(Threads)
 # TODO: change template word to project name and delete this comment
 add_library(template STATIC
   # enum your files and delete this comment
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp
 )
 
 target_link_libraries(

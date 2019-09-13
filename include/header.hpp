@@ -1,6 +1,9 @@
-// Copyright 2018 Your Name <your_email>
+#pragma once
 
-#ifndef INCLUDE_HEADER_HPP_
-#define INCLUDE_HEADER_HPP_
+#include <boost/filesystem.hpp>
+#include <iostream>
+#include <string>
+#include <boost/regex.hpp>
+#include <exception>
 
-#endif // INCLUDE_HEADER_HPP_
+using namespace std;
