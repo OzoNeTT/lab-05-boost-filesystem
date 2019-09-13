@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/OzoNeTT/lab-05-boost-filesystem.svg?branch=master)](https://travis-ci.org/OzoNeTT/lab-05-boost-filesystem)
+![GitHub Repo size](https://img.shields.io/github/repo-size/OzoNeTT/lab-05-boost-filesystem.svg)
+![Some badge](https://img.shields.io/badge/OzoNe-T__T-blue.svg)
+![forthebadge](https://forthebadge.com/images/badges/not-an-issue.svg)
 # Лабораторная работа №5
 
 Лабораторная работа посвящена изучению работы с файловой системой на языке **C++**. В стандарте **C++17** появилась библиотека для работы с [файловой системой](https://en.cppreference.com/w/cpp/filesystem). Но так как на данный момент еще не все компиляторы поддерживают новейший стандарт **C++** в этой лабораторный используется библиотека **boost::filesystem**, которая была взята за основу при разработке стандарта.
