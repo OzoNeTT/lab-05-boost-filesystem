@@ -25,19 +25,20 @@ string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
 string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
 
 hunter_add_package(GTest)
-hunter_add_package(Boost COMPONENTS filesystem regex)
+hunter_add_package(Boost COMPONENTS system filesystem regex)
 find_package(GTest CONFIG REQUIRED)
-find_package(Boost CONFIG REQUIRED filesystem regex)
+find_package(Boost CONFIG REQUIRED system filesystem regex)
 find_package(Threads)
 
 # TODO: change template word to project name and delete this comment
 add_library(template STATIC
   # enum your files and delete this comment
-        ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp
-)
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources/broker.cpp
+        include/broker.hpp)
 
 target_link_libraries(
         ${PROJECT_NAME}
+        Boost::system
         Boost::filesystem
         Boost::regex
 )

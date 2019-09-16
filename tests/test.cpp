@@ -1,5 +1,8 @@
-// Copyright 2018 Your Name <your_email>
-
 #include <gtest/gtest.h>
+#include "broker.hpp"
 
-#include <header.hpp>
+TEST(test, simple) {
+    string path_to_ftp = "../";
+    fileFind(path_to_ftp, path_to_ftp.length() + 1);
+    EXPECT_EQ(brokers.size(), 3);
+}
