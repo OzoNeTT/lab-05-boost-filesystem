@@ -3,6 +3,10 @@
 #include <boost/filesystem.hpp>
 #include <map>
 #include <iostream>
+#include <algorithm>
+#include <string>
+#include <boost/regex.hpp>
+#include <vector>
 
 using namespace boost::filesystem;
 using namespace std;
@@ -35,6 +39,16 @@ void fileFind(string path, size_t skipSubstr) {
             catch (exception &e){
                 continue;
             }
+        }
+    }
+
+}
+
+void FileGet () {
+    for (const auto &x : brokers){
+        for (const auto &y : x.second){
+            cout << "broker:" << x.first << " account:" << y.first << " files:" << y.second.first
+                 << " lastdate:" << y.second.second << endl;
         }
     }
 }
